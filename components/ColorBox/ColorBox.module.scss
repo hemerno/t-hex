@@ -1,0 +1,36 @@
+.colorWrapper {
+  background: #fff;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  cursor: pointer;
+}
+
+.colorSquare {
+  flex: 1 1 calc(100px - 0.4rem);
+}
+
+.colorHex {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.clipboardState {
+  position: fixed;
+  font-weight: 500;
+  bottom: 1rem;
+  right: 2rem;
+  left: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #000;
+  @media screen and (min-width: 768px) {
+    right: 4rem;
+    left: auto;
+    padding: 2rem;
+  }
+}

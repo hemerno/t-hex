@@ -1,0 +1,20 @@
+.section {
+  background: #444;
+  padding: 4rem 0;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.colorsColumn {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}

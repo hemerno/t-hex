@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+
+  h1 {
+    cursor: pointer;
+    margin: 0 0 4rem;
+  }
+
+  h1,
+  a {
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.4;
+    letter-spacing: -0.006rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+  a {
+    width: fit-content;
+    margin: 0.2rem 0;
+  }
+  a::after {
+    content: '↗';
+  }
+}
+
+.rightBlock {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.active {
+  color: #e42;
+}
